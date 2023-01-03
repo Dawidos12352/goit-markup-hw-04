@@ -6,50 +6,57 @@
   --background-color: #2f303a;
   --logo-color: #000000;
   --brand-font: "Roboto", sans-serif;
+  --space-gap: 30px;
 }
 body {
   font-family: var(--brand-font);
   color: var(--brand-color3);
   font-size: 14px;
   letter-spacing: 0.03em;
-  width: 1600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 ul {
   list-style: none;
-  padding-inline-start: 0px;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+}
+ul,
+h1,
+h2,
+h3,
+p {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 .section {
-  padding: 94px 0px 94px 0px;
+  padding: 94px 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header,
+.header__nav,
+.header__menu {
+  display: flex;
+}
+.header-border {
+  border-bottom: #ececec solid 1px;
 }
 .header {
-  border-bottom: #ececec solid 1px;
-  width: 1600px;
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 24px 15px 25px 27px;
 }
 .header__nav {
-  display: flex;
-  flex-direction: row;
+  align-items: center;
 }
-.header > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.logo {
+.header__logo {
   font-family: "raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--active-color);
+  margin-right: 93px;
 }
-.header__logo {
+.header__logo-part {
   color: var(--logo-color);
 }
 
@@ -57,21 +64,13 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
-  flex-direction: row;
-  padding: 32px 0px 32px 0px;
-}
-.logo__container {
-  padding: 24px 0px 25px 0px;
-  margin-right: 93px;
 }
 .header__menu > li:not(:last-child) {
   margin-right: 46px;
 }
 .header__contacts {
   display: flex;
-  flex-direction: row;
-  padding: 32px 0px 32px 0px;
+  align-items: center;
 }
 .header__contacts > li:not(:last-child) {
   margin-right: 50px;
@@ -107,16 +106,12 @@ button:focus,
 button:active {
   background-color: var(--active-color);
   color: var(--brand-color2);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border-style: hidden;
 }
 /*gallery*/
-.gallery__container {
-  width: 1200px;
-  padding: 94px 0px 94px 0px;
-}
 .menu__btn {
   display: flex;
   flex-direction: row;
@@ -133,7 +128,7 @@ button:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: var(--space-gap);
   margin-top: 50px;
 }
 .product__box {
@@ -151,20 +146,19 @@ button:active {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-block-start: 0px;
+  margin-block-start: 0;
   margin-block-end: 4px;
 }
 .product__description {
   font-size: 16px;
   line-height: 1.88;
   color: var(--brand-color1);
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 /*footer*/
 .footer__background {
   background-color: var(--background-color);
-  width: 1600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -175,13 +169,17 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 60px 0px 60px 15px;
+  padding: 60px 0 60px 15px;
 }
-.footer__container > a {
+.footer__logo {
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--active-color);
   margin-bottom: 20px;
 }
-
-.footer__logo {
+.footer__logo-part {
   color: var(--brand-color2);
 }
 .footer__adressess {
@@ -201,12 +199,9 @@ button:active {
 /*banner*/
 .banner {
   background-color: var(--background-color);
-  width: 1600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 200px 452px 200px 452px;
+  text-align: center;
+  padding: 200px 15px 200px 15px;
 }
 .banner__title {
   font-weight: 900;
@@ -216,8 +211,8 @@ button:active {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--brand-color2);
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
+  margin-block-start: 0;
+  margin-inline-end: 0;
   margin-bottom: 30px;
 }
 
@@ -228,6 +223,12 @@ button:active {
 
   letter-spacing: 0.06em;
   padding: 10px 41px 10px 42px;
+  background-color: var(--active-color);
+  color: var(--brand-color2);
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-style: hidden;
 }
 /*adventages*/
 .advantages {
@@ -241,27 +242,27 @@ button:active {
 .advantage__title {
   font-weight: 700;
   text-transform: uppercase;
-  margin-block-start: 0px;
+  margin-block-start: 0;
   margin-block-end: 10px;
 }
 .advantage__subtitle {
   line-height: 1.71;
   color: var(--brand-color1);
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 /*offices*/
 .section__header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  padding-top: 0px;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+  padding-top: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
   text-align: center;
 }
 .offices__container {
-  padding-top: 0px;
+  padding-top: 0;
 }
 .offices {
   display: flex;
@@ -274,7 +275,6 @@ button:active {
 /*cards*/
 .section__cards {
   background: #f5f4fa;
-  width: 1600px;
 }
 .cards {
   display: flex;
@@ -283,7 +283,7 @@ button:active {
   margin-top: 50px;
 }
 .card__container {
-  padding: 30px 0px 30px 0px;
+  padding: 30px 0 30px 0;
 }
 
 .card {
@@ -291,9 +291,9 @@ button:active {
   line-height: 1.19;
   text-align: center;
   background-color: var(--brand-color2);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
 }
 .card:not(:last-child) {
   margin-right: 30px;
@@ -301,18 +301,11 @@ button:active {
 .card__title {
   font-weight: 500;
   font-size: 16px;
-  margin-block-start: 0px;
+  margin-block-start: 0;
   margin-block-end: 10px;
 }
 .card__subtitle {
   color: var(--brand-color1);
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-}
-.container {
-  width: 1200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }

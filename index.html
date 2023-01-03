@@ -1,222 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../goit-markup-hw-03/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>WebStudio</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="header__nav">
-          <div class="logo__container">
-            <a class="logo link" href="./index.html"
-              >Web<span class="header__logo">Studio</span></a
-            >
-          </div>
-          <ul class="header__menu">
-            <li>
-              <a class="link header__menu-item" href="agencja">Agencja</a>
-            </li>
-            <li>
-              <a class="link header__menu-item" href="./portfolio.html"
-                >Porfolio</a
-              >
-            </li>
-            <li>
-              <a class="link header__menu-item" href="kontakt">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="header__contacts">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../goit-markup-hw-03/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <title>WebStudio</title>
+</head>
+
+<body>
+  <header class="header-border">
+    <div class="container header">
+      <nav class="header__nav">
+        <a class="header__logo link" href="./index.html">Web<span class="header__logo-part">Studio</span></a>
+        <ul class="header__menu">
           <li>
-            <a
-              class="link header__contacts-item"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="link header__menu-item" href="agencja">Agencja</a>
           </li>
           <li>
-            <a class="link header__contacts-item" href="tel:48111111111"
-              >+48 111 111 111</a
-            >
+            <a class="link header__menu-item" href="./portfolio.html">Porfolio</a>
+          </li>
+          <li>
+            <a class="link header__menu-item" href="kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__contacts">
+        <li>
+          <a class="link header__contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="link header__contacts-item" href="tel:48111111111">+48 111 111 111</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section banner">
+      <div class="container">
+        <h1 class="banner__title">
+          efektywne rozwiązania <br />
+          dla waszego biznesu
+        </h1>
+        <button class="banner__btn" type="button">Zamów usługę</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <ul class="advantages">
+          <li class="advantage">
+            <h3 class="advantage__title">lorem ipsum</h3>
+            <p class="advantage__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="advantage">
+            <h3 class="advantage__title">lorem ipsum</h3>
+            <p class="advantage__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="advantage">
+            <h3 class="advantage__title">lorem ipsum</h3>
+            <p class="advantage__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="advantage">
+            <h3 class="advantage__title">lorem ipsum</h3>
+            <p class="advantage__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
           </li>
         </ul>
       </div>
-    </header>
+    </section>
 
-    <main>
+    <section class="section offices__container">
       <div class="container">
-        <section class="section banner">
-          <h1 class="banner__title">
-            efektywne rozwiązania <br />
-            dla waszego biznesu
-          </h1>
-          <button class="banner__btn" type="button">Zamów usługę</button>
-        </section>
-
-        <section class="section">
-          <ul class="advantages">
-            <li class="advantage">
-              <h3 class="advantage__title">lorem ipsum</h3>
-              <p class="advantage__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="advantage">
-              <h3 class="advantage__title">lorem ipsum</h3>
-              <p class="advantage__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="advantage">
-              <h3 class="advantage__title">lorem ipsum</h3>
-              <p class="advantage__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="advantage">
-              <h3 class="advantage__title">lorem ipsum</h3>
-              <p class="advantage__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-          </ul>
-        </section>
-
-        <section class="section offices__container">
-          <h2 class="section__header">Czym się zajmujemy</h2>
-          <ul class="offices">
-            <li class="office">
-              <img
-                src="./images/box1.jpg"
-                alt="Programista koduje"
-                width="370"
-                height="294"
-              />
-            </li>
-            <li class="office">
-              <img
-                src="./images/box2.jpg"
-                alt="Pogramista pisze aplikacje na telefon"
-                width="370"
-                height="294"
-              />
-            </li>
-            <li class="office">
-              <img
-                src="./images/box3.jpg"
-                alt="Programista używa aplikacji"
-                width="370"
-                height="294"
-              />
-            </li>
-          </ul>
-        </section>
-
-        <section class="section section__cards">
-          <h2 class="section__header">Nasz zespół</h2>
-          <ul class="cards">
-            <li class="card">
-              <img
-                src="../goit-markup-hw-01/images/img1.jpg"
-                alt="Product Designer osobiście"
-                width="270"
-                height="260"
-              />
-              <div class="card__container">
-                <h3 class="card__title">John Doe</h3>
-                <p class="card__subtitle">Product Designer</p>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/img2.jpg"
-                alt="Frontend Developer osobiście"
-                width="270"
-                height="260"
-              />
-              <div class="card__container">
-                <h3 class="card__title">John Doe</h3>
-                <p class="card__subtitle">Frontend Developer</p>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/img3.jpg"
-                alt="John Doe odpoweidzialny za marketing osobiście"
-                width="270"
-                height="260"
-              />
-              <div class="card__container">
-                <h3 class="card__title">John Doe</h3>
-                <p class="card__subtitle">Marketing</p>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/img4.jpg"
-                alt="UI Designer osobiście"
-                width="270"
-                height="260"
-              />
-              <div class="card__container">
-                <h3 class="card__title">John Doe</h3>
-                <p class="card__subtitle">UI Designer</p>
-              </div>
-            </li>
-          </ul>
-        </section>
+        <h2 class="section__header">Czym się zajmujemy</h2>
+        <ul class="offices">
+          <li class="office">
+            <img src="./images/box1.jpg" alt="Programista koduje" width="370" height="294" />
+          </li>
+          <li class="office">
+            <img src="./images/box2.jpg" alt="Pogramista pisze aplikacje na telefon" width="370" height="294" />
+          </li>
+          <li class="office">
+            <img src="./images/box3.jpg" alt="Programista używa aplikacji" width="370" height="294" />
+          </li>
+        </ul>
       </div>
-    </main>
+    </section>
 
-    <footer class="footer__background">
-      <div class="footer__container">
-        <a class="logo link" href="WebStudio"
-          >Web<span class="footer__logo">Studio</span></a
-        >
-        <address>
-          <ul class="footer__adressess">
-            <li>
-              <a
-                class="link footer__place"
-                href="https://goo.gl/maps/jp3QV2B9B6zz9JZ26"
-                >m. Warszawa, Aleje Jerozolimskie 21</a
-              >
-            </li>
-            <li>
-              <a class="link footer__address" href=" mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li>
-              <a class="link footer__address" href="tel:48111111111"
-                >+48 111 111 111</a
-              >
-            </li>
-          </ul>
-        </address>
+    <section class="section section__cards">
+      <div class="container">
+        <h2 class="section__header">Nasz zespół</h2>
+        <ul class="cards">
+          <li class="card">
+            <img src="../goit-markup-hw-01/images/img1.jpg" alt="Product Designer osobiście" width="270" height="260" />
+            <div class="card__container">
+              <h3 class="card__title">John Doe</h3>
+              <p class="card__subtitle">Product Designer</p>
+            </div>
+          </li>
+          <li class="card">
+            <img src="./images/img2.jpg" alt="Frontend Developer osobiście" width="270" height="260" />
+            <div class="card__container">
+              <h3 class="card__title">John Doe</h3>
+              <p class="card__subtitle">Frontend Developer</p>
+            </div>
+          </li>
+          <li class="card">
+            <img src="./images/img3.jpg" alt="John Doe odpoweidzialny za marketing osobiście" width="270"
+              height="260" />
+            <div class="card__container">
+              <h3 class="card__title">John Doe</h3>
+              <p class="card__subtitle">Marketing</p>
+            </div>
+          </li>
+          <li class="card">
+            <img src="./images/img4.jpg" alt="UI Designer osobiście" width="270" height="260" />
+            <div class="card__container">
+              <h3 class="card__title">John Doe</h3>
+              <p class="card__subtitle">UI Designer</p>
+            </div>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer class="footer__background">
+    <div class="footer__container">
+      <a class="footer__logo link" href="WebStudio">Web<span class="footer__logo-part">Studio</span></a>
+      <address>
+        <ul class="footer__adressess">
+          <li>
+            <a class="link footer__place" href="https://goo.gl/maps/jp3QV2B9B6zz9JZ26">m. Warszawa, Aleje Jerozolimskie
+              21</a>
+          </li>
+          <li>
+            <a class="link footer__address" href=" mailto:info@example.com">info@example.com</a>
+          </li>
+          <li>
+            <a class="link footer__address" href="tel:48111111111">+48 111 111 111</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </footer>
+</body>
+
 </html>
