@@ -251,6 +251,9 @@ button:active {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+.adventage-icons {
+  margin-bottom: 30px;
+}
 /*offices*/
 .section__header {
   font-weight: 700;
