@@ -145,6 +145,13 @@ button:active {
   flex-basis: calc((100% - 90px) / 3);
   background-color: var(--brand-color2);
 }
+.gallery__product:focus,
+.gallery__product:hover,
+.gallery__product:active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
 .product__name {
   font-weight: 700;
   font-size: 18px;
@@ -238,6 +245,15 @@ button:active {
   align-items: center;
   text-align: center;
   padding: 200px 15px 200px 15px;
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 80%
+    ),
+    url("../images/banner-background.jpg");
+  background-size: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .banner__title {
   font-weight: 900;

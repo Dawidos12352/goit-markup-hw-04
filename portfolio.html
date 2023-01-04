@@ -34,11 +34,20 @@
         </ul>
       </nav>
       <ul class="header__contacts">
-        <li>
-          <a class="link header__contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <li class="header__contact">
+          <a class="link header__contacts-item" href="mailto:info@devstudio.com">
+            <svg class=" header__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-e-mail"></use>
+            </svg>
+            info@devstudio.com
+          </a>
         </li>
-        <li>
-          <a class="link header__contacts-item" href="tel:48111111111">+48 111 111 111</a>
+        <li class="header__contact">
+          <a class="link header__contacts-item" href="tel:48111111111">
+            <svg class="header__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +48 111 111 111</a>
         </li>
       </ul>
     </div>
@@ -128,21 +137,57 @@
 
   <footer class="footer__background">
     <div class="footer__container">
-      <a class="footer__logo link" href="WebStudio">Web<span class="footer__logo-part">Studio</span></a>
-      <address>
-        <ul class="footer__adressess">
-          <li>
-            <a class="link footer__place" href="https://goo.gl/maps/jp3QV2B9B6zz9JZ26">m. Warszawa, Aleje Jerozolimskie
-              21</a>
+      <div class="footer__wrapper">
+        <a class="footer__logo link" href="WebStudio">Web<span class="footer__logo-part">Studio</span></a>
+        <address>
+          <ul class="footer__adressess">
+            <li>
+              <a class="link footer__place" href="https://goo.gl/maps/jp3QV2B9B6zz9JZ26">m. Warszawa, Aleje
+                Jerozolimskie
+                21</a>
+            </li>
+            <li>
+              <a class="link footer__address" href=" mailto:info@example.com">info@example.com</a>
+            </li>
+            <li>
+              <a class="link footer__address" href="tel:48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer__social-media">
+        <h3 class="footer__title">dołącz do nas</h3>
+        <ul class="footer__icons">
+          <li class="footer__icon">
+            <a href="#" target="_blank" class="footer__icon-link">
+              <svg class="footer__icon-item" width="44px" height="44px">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <a class="link footer__address" href=" mailto:info@example.com">info@example.com</a>
+          <li class="footer__icon">
+            <a href="#" target="_blank" class="footer__icon-link">
+              <svg class="footer__icon-item" width="44px" height="44px">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <a class="link footer__address" href="tel:48111111111">+48 111 111 111</a>
+          <li class="footer__icon">
+            <a href="#" target="_blank" class="footer__icon-link">
+              <svg class="footer__icon-item" width="44px" height="44px">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__icon">
+            <a href="#" target="_blank" class="footer__icon-link">
+              <svg class="footer__icon-item" width="44px" height="44px">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </address>
+      </div>
     </div>
   </footer>
 </body>
