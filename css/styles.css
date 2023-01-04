@@ -392,6 +392,8 @@ button:active {
   border-radius: 4px;
   padding: 17.71px 32px 14.25px 32px;
   flex-basis: calc((100% - 5 * var(--space-gap)) / 6);
+  --color5: var(--icon-color);
+  --color3: var(--icon-color);
 }
 .client__icon:hover,
 .client__icon:focus,
@@ -399,4 +401,5 @@ button:active {
   cursor: pointer;
   border: 1px solid var(--active-color);
   --color5: var(--active-color);
+  --color3: var(--active-color);
 }
