@@ -1,11 +1,11 @@
 :root {
   --active-color: #2196f3;
   --brand-color1: #757575;
-  --brand-color2: #ffffff;
+  --brand-color2: #fff;
   --brand-color3: #212121;
   --background-color: #2f303a;
   --icon-color: #afb1b8;
-  --logo-color: #000000;
+  --logo-color: #000;
   --brand-font: "Roboto", sans-serif;
   --space-gap: 30px;
 }
@@ -40,7 +40,7 @@ p {
   display: flex;
 }
 .header-border {
-  border-bottom: #ececec solid 1px;
+  border-bottom: 1px solid #ececec;
 }
 .header {
   justify-content: space-between;
@@ -72,11 +72,11 @@ p {
 .header__contacts {
   display: flex;
   align-items: center;
+  padding: auto;
 }
 .header__contacts > li:not(:last-child) {
   margin-right: 50px;
 }
-
 .header__contacts-item {
   color: var(--brand-color1);
 }
@@ -86,7 +86,14 @@ p {
 .header__icon {
   margin-right: 10px;
 }
-
+.header__icon:nth-child(1) {
+  position: relative;
+  top: 2px;
+}
+.header__icon:nth-child(2) {
+  position: relative;
+  top: 4px;
+}
 .link:hover,
 .link:focus,
 .link:active {
@@ -137,9 +144,9 @@ button:active {
   margin-top: 50px;
 }
 .product__box {
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding: 20px 24px 20px 24px;
 }
 .gallery__product {
@@ -231,7 +238,7 @@ button:active {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--brand-color2);
   margin-bottom: 20px;
   margin-top: 12px;
 }
